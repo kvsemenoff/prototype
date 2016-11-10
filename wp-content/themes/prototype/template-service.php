@@ -4,6 +4,7 @@ Template name: Услуги
 */
 ?>
 <?php get_header(); ?>     
+
 <!-- container -->
 <div class="container">
     <div>
@@ -15,10 +16,11 @@ Template name: Услуги
             <h1>Услуги типографии</h1>
             <p>На этой странице перечислен полный ассортимент продукции, печать или изготовление которой можно заказать в типографии «ПРОТОТИП».</p>
         </div>
+
         <div class="service_page">
             <div class="service_page_link">
                 <a href="#" class="ser_img">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/services/ser1.jpg" alt="" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/services/ser1.jpg" alt="" />
                 </a>
                 <div class="ser_txt">
                     <a href="#" class="ser_title">Дизайн</a>
@@ -133,6 +135,8 @@ Template name: Услуги
                     <a href="#" class="ser_title">Наклейки</a>
                 </div>
             </div>
+
+
         </div>
     </div>
 </div>
