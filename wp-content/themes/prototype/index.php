@@ -118,11 +118,11 @@
         <div class="fresh_works">
         	<div class="title_block title_block_lined">СВЕЖИЕ РАБОТЫ</div> 
             <div class="works_categories">                                                               
-            	<a href="#" class="grey_btn active_gr_btn">Все</a>
-                <a href="#" class="grey_btn">УФ печать</a>
-                <a href="#" class="grey_btn">Печать на текстиле</a>
-                <a href="#" class="grey_btn">Цифровая печать</a>
-                <a href="#" class="grey_btn">Широформатная печать</a>
+            	<a class="grey_btn active_gr_btn">Все</a>
+                <a class="grey_btn">УФ печать</a>
+                <a class="grey_btn">Печать на текстиле</a>
+                <a class="grey_btn">Цифровая печать</a>
+                <a class="grey_btn">Широформатная печать</a>
             </div>
         	<div class="fresh_works_slider">
             	<div class="swiper-container works_slider">
@@ -393,5 +393,16 @@
             </div>
         </div>
         <!-- /clients -->
-        
+    <script>
+        $('.works_categories a').click(function(e) {     
+            e.preventDefault();
+            $('a').removeClass('active_gr_btn');
+            $(this).addClass('active_gr_btn');
+            var tab = $(this).attr('href');
+            // $('.tab').not(tab).css({'display':'none'});
+            // $(tab).fadeIn(400);
+            $(".fresh_works_slider").hide(500);
+            $(".fresh_works_slider").show(1000);
+        });
+    </script>
 <?php get_footer(); ?>
