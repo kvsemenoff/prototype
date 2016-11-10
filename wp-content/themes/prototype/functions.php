@@ -112,6 +112,54 @@ function history_register() {
 
 
 
+add_action('init', 'team_register');
+function team_register() {
+    $args = array(
+        'label'               => __('Команда'),
+        'labels'              => array(
+            'name'               => __('Команда'),
+            'singular_name'      => __('Команда'),
+            'menu_name'          => __('Команда'),
+            'all_items'          => __('Все члены команды'),
+            'add_new'            => _x('Добавить участника команды', 'talk'),
+            'add_new_item'       => __('Новый участник команды'),
+            'edit_item'          => __('Редактировать участника команды'),
+            'new_item'           => __('Новый участник команды'),
+            'view_item'          => __('Команда'),
+            'not_found'          => __('Участник команды не найден'),
+            'not_found_in_trash' => __('Участника команды нету'),
+            'search_items'       => __('Найти участника команды')
+        ),
+        'description'         => __('Участники команды'),
+        'public'              => true,
+        'exclude_from_search' => false,
+        'publicly_queryable'  => true,
+        'show_ui'             => true,
+        'show_in_nav_menus'   => true,
+        'show_in_menu'        => true,
+        'show_in_admin_bar'   => true,
+        'menu_position'       => 5,
+        'capability_type'     => 'post',
+        'hierarchical'        => false,
+        'supports'            => array(
+            'title',
+            'editor',
+            'thumbnail',
+   'excerpt',
+   'custom-fields',
+   
+        ),
+        'has_archive'         => false,
+        'rewrite'             => array(
+            'slug'       => '',
+            'with_front' => false
+        )
+    );
+    register_post_type('team', $args);
+}
+
+
+
 add_action('init', 'faq_register');
 function faq_register() {
     $args = array(
