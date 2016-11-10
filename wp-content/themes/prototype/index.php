@@ -3,6 +3,15 @@
 
         
         
+<script>
+    $(document).ready(function(){
+
+        $('.m1, .m2, .m3, .m4').css('display','none');
+
+               
+    });
+</script>
+
                 
         <!-- video_block -->
         <div class="video_block">
@@ -118,13 +127,13 @@
         <div class="fresh_works">
         	<div class="title_block title_block_lined">СВЕЖИЕ РАБОТЫ</div> 
             <div class="works_categories">                                                               
-            	<a class="grey_btn active_gr_btn">Все</a>
-                <a class="grey_btn">УФ печать</a>
-                <a class="grey_btn">Печать на текстиле</a>
-                <a class="grey_btn">Цифровая печать</a>
-                <a class="grey_btn">Широформатная печать</a>
+            	<a class="grey_btn active_gr_btn r0">Все</a>
+                <a class="grey_btn r1">УФ печать</a>
+                <a class="grey_btn r2">Печать на текстиле</a>
+                <a class="grey_btn r3">Цифровая печать</a>
+                <a class="grey_btn r4">Широформатная печать</a>
             </div>
-        	<div class="fresh_works_slider">
+        	<div class="fresh_works_slider m0 ">
             	<div class="swiper-container works_slider">
                 	<div class="swiper-wrapper">
                     	<div class="swiper-slide">
@@ -135,7 +144,7 @@
                                     	<img src="<?php echo get_template_directory_uri(); ?>/img/svg/categories/computer-screen_w.svg" alt="" />
                                         <span class="tooltip-content">Tooltip</span>
                                     </a>
-                                    <a href="#" class="item_title">УФ печать на фризби</a>
+                                    <a href="#" class="item_title">11УФ печать на фризби</a>
                                     <span class="fresh_client">Ростелеком</span>
                                 </div>
                             </div>
@@ -250,6 +259,550 @@
                                 <div class="fresh_item_text">
                                 	<a href="#" class="category_label tooltip">
                                     	<img src="<?php echo get_template_directory_uri(); ?>/img/svg/categories/computer-screen_w.svg" alt="" />
+                                        <span class="tooltip-content">Tooltip</span>
+                                    </a>
+                                    <a href="#" class="item_title">УФ печать на ЧЕХЛЕ МОБИЛЬНОГО ТЕЛЕФОНА</a>
+                                    <span class="fresh_client">Частный клиент</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fresh_works_slider m1 ">
+                <div class="swiper-container works_slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="fresh_item">
+                                <a href="#" class="fresh_item_img"><img src="<?php echo get_template_directory_uri(); ?>/img/fresh.jpg" alt="" /></a>
+                                <div class="fresh_item_text">
+                                    <a href="#" class="category_label tooltip">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/img/svg/categories/computer-screen_w.svg" alt="" />
+                                        <span class="tooltip-content">Tooltip</span>
+                                    </a>
+                                    <a href="#" class="item_title">22УФ печать на фризби</a>
+                                    <span class="fresh_client">Ростелеком</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="fresh_item">
+                                <a href="#" class="fresh_item_img"><img src="<?php echo get_template_directory_uri(); ?>/img/fresh.jpg" alt="" /></a>
+                                <div class="fresh_item_text">
+                                    <a href="#" class="category_label tooltip">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/img/svg/categories/computer-screen_w.svg" alt="" />
+                                        <span class="tooltip-content">Tooltip</span>
+                                    </a>
+                                    <a href="#" class="item_title">УФ печать на ЧЕХЛЕ МОБИЛЬНОГО ТЕЛЕФОНА</a>
+                                    <span class="fresh_client">Частный клиент</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="fresh_item">
+                                <a href="#" class="fresh_item_img"><img src="<?php echo get_template_directory_uri(); ?>/img/fresh.jpg" alt="" /></a>
+                                <div class="fresh_item_text">
+                                    <a href="#" class="category_label tooltip">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/img/svg/categories/computer-screen_w.svg" alt="" />
+                                        <span class="tooltip-content">Tooltip</span>
+                                    </a>
+                                    <a href="#" class="item_title">УФ печать на фризби</a>
+                                    <span class="fresh_client">Ростелеком</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="fresh_item">
+                                <a href="#" class="fresh_item_img"><img src="<?php echo get_template_directory_uri(); ?>/img/fresh.jpg" alt="" /></a>
+                                <div class="fresh_item_text">
+                                    <a href="#" class="category_label tooltip">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/img/svg/categories/computer-screen_w.svg" alt="" />
+                                        <span class="tooltip-content">Tooltip</span>
+                                    </a>
+                                    <a href="#" class="item_title">УФ печать на ЧЕХЛЕ МОБИЛЬНОГО ТЕЛЕФОНА</a>
+                                    <span class="fresh_client">Частный клиент</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="fresh_item">
+                                <a href="#" class="fresh_item_img"><img src="<?php echo get_template_directory_uri(); ?>/img/fresh.jpg" alt="" /></a>
+                                <div class="fresh_item_text">
+                                    <a href="#" class="category_label tooltip">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/img/svg/categories/computer-screen_w.svg" alt="" />
+                                        <span class="tooltip-content">Tooltip</span>
+                                    </a>
+                                    <<a href="#" class="item_title">УФ печать на фризби</a>
+                                    <span class="fresh_client">Ростелеком</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="fresh_item">
+                                <a href="#" class="fresh_item_img"><img src="<?php echo get_template_directory_uri(); ?>/img/fresh.jpg" alt="" /></a>
+                                <div class="fresh_item_text">
+                                    <a href="#" class="category_label tooltip">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/img/svg/categories/computer-screen_w.svg" alt="" />
+                                        <span class="tooltip-content">Tooltip</span>
+                                    </a>
+                                    <a href="#" class="item_title">УФ печать на ЧЕХЛЕ МОБИЛЬНОГО ТЕЛЕФОНА</a>
+                                    <span class="fresh_client">Частный клиент</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="fresh_item">
+                                <a href="#" class="fresh_item_img"><img src="<?php echo get_template_directory_uri(); ?>/img/fresh.jpg" alt="" /></a>
+                                <div class="fresh_item_text">
+                                    <a href="#" class="category_label tooltip">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/img/svg/categories/computer-screen_w.svg" alt="" />
+                                        <span class="tooltip-content">Tooltip</span>
+                                    </a>
+                                    <a href="#" class="item_title">УФ печать на фризби</a>
+                                    <span class="fresh_client">Ростелеком</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="fresh_item">
+                                <a href="#" class="fresh_item_img"><img src="<?php echo get_template_directory_uri(); ?>/img/fresh.jpg" alt="" /></a>
+                                <div class="fresh_item_text">
+                                    <a href="#" class="category_label tooltip">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/img/svg/categories/computer-screen_w.svg" alt="" />
+                                        <span class="tooltip-content">Tooltip</span>
+                                    </a>
+                                    <a href="#" class="item_title">УФ печать на ЧЕХЛЕ МОБИЛЬНОГО ТЕЛЕФОНА</a>
+                                    <span class="fresh_client">Частный клиент</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="fresh_item">
+                                <a href="#" class="fresh_item_img"><img src="<?php echo get_template_directory_uri(); ?>/img/fresh.jpg" alt="" /></a>
+                                <div class="fresh_item_text">
+                                    <a href="#" class="category_label tooltip">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/img/svg/categories/computer-screen_w.svg" alt="" />
+                                        <span class="tooltip-content">Tooltip</span>
+                                    </a>
+                                    <a href="#" class="item_title">УФ печать на фризби</a>
+                                    <span class="fresh_client">Ростелеком</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="fresh_item">
+                                <a href="#" class="fresh_item_img"><img src="<?php echo get_template_directory_uri(); ?>/img/fresh.jpg" alt="" /></a>
+                                <div class="fresh_item_text">
+                                    <a href="#" class="category_label tooltip">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/img/svg/categories/computer-screen_w.svg" alt="" />
+                                        <span class="tooltip-content">Tooltip</span>
+                                    </a>
+                                    <a href="#" class="item_title">УФ печать на ЧЕХЛЕ МОБИЛЬНОГО ТЕЛЕФОНА</a>
+                                    <span class="fresh_client">Частный клиент</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fresh_works_slider m2 ">
+                <div class="swiper-container works_slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="fresh_item">
+                                <a href="#" class="fresh_item_img"><img src="<?php echo get_template_directory_uri(); ?>/img/fresh.jpg" alt="" /></a>
+                                <div class="fresh_item_text">
+                                    <a href="#" class="category_label tooltip">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/img/svg/categories/computer-screen_w.svg" alt="" />
+                                        <span class="tooltip-content">Tooltip</span>
+                                    </a>
+                                    <a href="#" class="item_title">33УФ печать на фризби</a>
+                                    <span class="fresh_client">Ростелеком</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="fresh_item">
+                                <a href="#" class="fresh_item_img"><img src="<?php echo get_template_directory_uri(); ?>/img/fresh.jpg" alt="" /></a>
+                                <div class="fresh_item_text">
+                                    <a href="#" class="category_label tooltip">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/img/svg/categories/computer-screen_w.svg" alt="" />
+                                        <span class="tooltip-content">Tooltip</span>
+                                    </a>
+                                    <a href="#" class="item_title">УФ печать на ЧЕХЛЕ МОБИЛЬНОГО ТЕЛЕФОНА</a>
+                                    <span class="fresh_client">Частный клиент</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="fresh_item">
+                                <a href="#" class="fresh_item_img"><img src="<?php echo get_template_directory_uri(); ?>/img/fresh.jpg" alt="" /></a>
+                                <div class="fresh_item_text">
+                                    <a href="#" class="category_label tooltip">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/img/svg/categories/computer-screen_w.svg" alt="" />
+                                        <span class="tooltip-content">Tooltip</span>
+                                    </a>
+                                    <a href="#" class="item_title">УФ печать на фризби</a>
+                                    <span class="fresh_client">Ростелеком</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="fresh_item">
+                                <a href="#" class="fresh_item_img"><img src="<?php echo get_template_directory_uri(); ?>/img/fresh.jpg" alt="" /></a>
+                                <div class="fresh_item_text">
+                                    <a href="#" class="category_label tooltip">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/img/svg/categories/computer-screen_w.svg" alt="" />
+                                        <span class="tooltip-content">Tooltip</span>
+                                    </a>
+                                    <a href="#" class="item_title">УФ печать на ЧЕХЛЕ МОБИЛЬНОГО ТЕЛЕФОНА</a>
+                                    <span class="fresh_client">Частный клиент</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="fresh_item">
+                                <a href="#" class="fresh_item_img"><img src="<?php echo get_template_directory_uri(); ?>/img/fresh.jpg" alt="" /></a>
+                                <div class="fresh_item_text">
+                                    <a href="#" class="category_label tooltip">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/img/svg/categories/computer-screen_w.svg" alt="" />
+                                        <span class="tooltip-content">Tooltip</span>
+                                    </a>
+                                    <<a href="#" class="item_title">УФ печать на фризби</a>
+                                    <span class="fresh_client">Ростелеком</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="fresh_item">
+                                <a href="#" class="fresh_item_img"><img src="<?php echo get_template_directory_uri(); ?>/img/fresh.jpg" alt="" /></a>
+                                <div class="fresh_item_text">
+                                    <a href="#" class="category_label tooltip">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/img/svg/categories/computer-screen_w.svg" alt="" />
+                                        <span class="tooltip-content">Tooltip</span>
+                                    </a>
+                                    <a href="#" class="item_title">УФ печать на ЧЕХЛЕ МОБИЛЬНОГО ТЕЛЕФОНА</a>
+                                    <span class="fresh_client">Частный клиент</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="fresh_item">
+                                <a href="#" class="fresh_item_img"><img src="<?php echo get_template_directory_uri(); ?>/img/fresh.jpg" alt="" /></a>
+                                <div class="fresh_item_text">
+                                    <a href="#" class="category_label tooltip">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/img/svg/categories/computer-screen_w.svg" alt="" />
+                                        <span class="tooltip-content">Tooltip</span>
+                                    </a>
+                                    <a href="#" class="item_title">УФ печать на фризби</a>
+                                    <span class="fresh_client">Ростелеком</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="fresh_item">
+                                <a href="#" class="fresh_item_img"><img src="<?php echo get_template_directory_uri(); ?>/img/fresh.jpg" alt="" /></a>
+                                <div class="fresh_item_text">
+                                    <a href="#" class="category_label tooltip">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/img/svg/categories/computer-screen_w.svg" alt="" />
+                                        <span class="tooltip-content">Tooltip</span>
+                                    </a>
+                                    <a href="#" class="item_title">УФ печать на ЧЕХЛЕ МОБИЛЬНОГО ТЕЛЕФОНА</a>
+                                    <span class="fresh_client">Частный клиент</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="fresh_item">
+                                <a href="#" class="fresh_item_img"><img src="<?php echo get_template_directory_uri(); ?>/img/fresh.jpg" alt="" /></a>
+                                <div class="fresh_item_text">
+                                    <a href="#" class="category_label tooltip">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/img/svg/categories/computer-screen_w.svg" alt="" />
+                                        <span class="tooltip-content">Tooltip</span>
+                                    </a>
+                                    <a href="#" class="item_title">УФ печать на фризби</a>
+                                    <span class="fresh_client">Ростелеком</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="fresh_item">
+                                <a href="#" class="fresh_item_img"><img src="<?php echo get_template_directory_uri(); ?>/img/fresh.jpg" alt="" /></a>
+                                <div class="fresh_item_text">
+                                    <a href="#" class="category_label tooltip">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/img/svg/categories/computer-screen_w.svg" alt="" />
+                                        <span class="tooltip-content">Tooltip</span>
+                                    </a>
+                                    <a href="#" class="item_title">УФ печать на ЧЕХЛЕ МОБИЛЬНОГО ТЕЛЕФОНА</a>
+                                    <span class="fresh_client">Частный клиент</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fresh_works_slider m3 ">
+                <div class="swiper-container works_slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="fresh_item">
+                                <a href="#" class="fresh_item_img"><img src="<?php echo get_template_directory_uri(); ?>/img/fresh.jpg" alt="" /></a>
+                                <div class="fresh_item_text">
+                                    <a href="#" class="category_label tooltip">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/img/svg/categories/computer-screen_w.svg" alt="" />
+                                        <span class="tooltip-content">Tooltip</span>
+                                    </a>
+                                    <a href="#" class="item_title">44УФ печать на фризби</a>
+                                    <span class="fresh_client">Ростелеком</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="fresh_item">
+                                <a href="#" class="fresh_item_img"><img src="<?php echo get_template_directory_uri(); ?>/img/fresh.jpg" alt="" /></a>
+                                <div class="fresh_item_text">
+                                    <a href="#" class="category_label tooltip">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/img/svg/categories/computer-screen_w.svg" alt="" />
+                                        <span class="tooltip-content">Tooltip</span>
+                                    </a>
+                                    <a href="#" class="item_title">УФ печать на ЧЕХЛЕ МОБИЛЬНОГО ТЕЛЕФОНА</a>
+                                    <span class="fresh_client">Частный клиент</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="fresh_item">
+                                <a href="#" class="fresh_item_img"><img src="<?php echo get_template_directory_uri(); ?>/img/fresh.jpg" alt="" /></a>
+                                <div class="fresh_item_text">
+                                    <a href="#" class="category_label tooltip">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/img/svg/categories/computer-screen_w.svg" alt="" />
+                                        <span class="tooltip-content">Tooltip</span>
+                                    </a>
+                                    <a href="#" class="item_title">УФ печать на фризби</a>
+                                    <span class="fresh_client">Ростелеком</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="fresh_item">
+                                <a href="#" class="fresh_item_img"><img src="<?php echo get_template_directory_uri(); ?>/img/fresh.jpg" alt="" /></a>
+                                <div class="fresh_item_text">
+                                    <a href="#" class="category_label tooltip">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/img/svg/categories/computer-screen_w.svg" alt="" />
+                                        <span class="tooltip-content">Tooltip</span>
+                                    </a>
+                                    <a href="#" class="item_title">УФ печать на ЧЕХЛЕ МОБИЛЬНОГО ТЕЛЕФОНА</a>
+                                    <span class="fresh_client">Частный клиент</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="fresh_item">
+                                <a href="#" class="fresh_item_img"><img src="<?php echo get_template_directory_uri(); ?>/img/fresh.jpg" alt="" /></a>
+                                <div class="fresh_item_text">
+                                    <a href="#" class="category_label tooltip">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/img/svg/categories/computer-screen_w.svg" alt="" />
+                                        <span class="tooltip-content">Tooltip</span>
+                                    </a>
+                                    <<a href="#" class="item_title">УФ печать на фризби</a>
+                                    <span class="fresh_client">Ростелеком</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="fresh_item">
+                                <a href="#" class="fresh_item_img"><img src="<?php echo get_template_directory_uri(); ?>/img/fresh.jpg" alt="" /></a>
+                                <div class="fresh_item_text">
+                                    <a href="#" class="category_label tooltip">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/img/svg/categories/computer-screen_w.svg" alt="" />
+                                        <span class="tooltip-content">Tooltip</span>
+                                    </a>
+                                    <a href="#" class="item_title">УФ печать на ЧЕХЛЕ МОБИЛЬНОГО ТЕЛЕФОНА</a>
+                                    <span class="fresh_client">Частный клиент</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="fresh_item">
+                                <a href="#" class="fresh_item_img"><img src="<?php echo get_template_directory_uri(); ?>/img/fresh.jpg" alt="" /></a>
+                                <div class="fresh_item_text">
+                                    <a href="#" class="category_label tooltip">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/img/svg/categories/computer-screen_w.svg" alt="" />
+                                        <span class="tooltip-content">Tooltip</span>
+                                    </a>
+                                    <a href="#" class="item_title">УФ печать на фризби</a>
+                                    <span class="fresh_client">Ростелеком</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="fresh_item">
+                                <a href="#" class="fresh_item_img"><img src="<?php echo get_template_directory_uri(); ?>/img/fresh.jpg" alt="" /></a>
+                                <div class="fresh_item_text">
+                                    <a href="#" class="category_label tooltip">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/img/svg/categories/computer-screen_w.svg" alt="" />
+                                        <span class="tooltip-content">Tooltip</span>
+                                    </a>
+                                    <a href="#" class="item_title">УФ печать на ЧЕХЛЕ МОБИЛЬНОГО ТЕЛЕФОНА</a>
+                                    <span class="fresh_client">Частный клиент</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="fresh_item">
+                                <a href="#" class="fresh_item_img"><img src="<?php echo get_template_directory_uri(); ?>/img/fresh.jpg" alt="" /></a>
+                                <div class="fresh_item_text">
+                                    <a href="#" class="category_label tooltip">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/img/svg/categories/computer-screen_w.svg" alt="" />
+                                        <span class="tooltip-content">Tooltip</span>
+                                    </a>
+                                    <a href="#" class="item_title">УФ печать на фризби</a>
+                                    <span class="fresh_client">Ростелеком</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="fresh_item">
+                                <a href="#" class="fresh_item_img"><img src="<?php echo get_template_directory_uri(); ?>/img/fresh.jpg" alt="" /></a>
+                                <div class="fresh_item_text">
+                                    <a href="#" class="category_label tooltip">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/img/svg/categories/computer-screen_w.svg" alt="" />
+                                        <span class="tooltip-content">Tooltip</span>
+                                    </a>
+                                    <a href="#" class="item_title">УФ печать на ЧЕХЛЕ МОБИЛЬНОГО ТЕЛЕФОНА</a>
+                                    <span class="fresh_client">Частный клиент</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fresh_works_slider m4 ">
+                <div class="swiper-container works_slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="fresh_item">
+                                <a href="#" class="fresh_item_img"><img src="<?php echo get_template_directory_uri(); ?>/img/fresh.jpg" alt="" /></a>
+                                <div class="fresh_item_text">
+                                    <a href="#" class="category_label tooltip">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/img/svg/categories/computer-screen_w.svg" alt="" />
+                                        <span class="tooltip-content">Tooltip</span>
+                                    </a>
+                                    <a href="#" class="item_title">55УФ печать на фризби</a>
+                                    <span class="fresh_client">Ростелеком</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="fresh_item">
+                                <a href="#" class="fresh_item_img"><img src="<?php echo get_template_directory_uri(); ?>/img/fresh.jpg" alt="" /></a>
+                                <div class="fresh_item_text">
+                                    <a href="#" class="category_label tooltip">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/img/svg/categories/computer-screen_w.svg" alt="" />
+                                        <span class="tooltip-content">Tooltip</span>
+                                    </a>
+                                    <a href="#" class="item_title">УФ печать на ЧЕХЛЕ МОБИЛЬНОГО ТЕЛЕФОНА</a>
+                                    <span class="fresh_client">Частный клиент</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="fresh_item">
+                                <a href="#" class="fresh_item_img"><img src="<?php echo get_template_directory_uri(); ?>/img/fresh.jpg" alt="" /></a>
+                                <div class="fresh_item_text">
+                                    <a href="#" class="category_label tooltip">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/img/svg/categories/computer-screen_w.svg" alt="" />
+                                        <span class="tooltip-content">Tooltip</span>
+                                    </a>
+                                    <a href="#" class="item_title">УФ печать на фризби</a>
+                                    <span class="fresh_client">Ростелеком</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="fresh_item">
+                                <a href="#" class="fresh_item_img"><img src="<?php echo get_template_directory_uri(); ?>/img/fresh.jpg" alt="" /></a>
+                                <div class="fresh_item_text">
+                                    <a href="#" class="category_label tooltip">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/img/svg/categories/computer-screen_w.svg" alt="" />
+                                        <span class="tooltip-content">Tooltip</span>
+                                    </a>
+                                    <a href="#" class="item_title">УФ печать на ЧЕХЛЕ МОБИЛЬНОГО ТЕЛЕФОНА</a>
+                                    <span class="fresh_client">Частный клиент</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="fresh_item">
+                                <a href="#" class="fresh_item_img"><img src="<?php echo get_template_directory_uri(); ?>/img/fresh.jpg" alt="" /></a>
+                                <div class="fresh_item_text">
+                                    <a href="#" class="category_label tooltip">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/img/svg/categories/computer-screen_w.svg" alt="" />
+                                        <span class="tooltip-content">Tooltip</span>
+                                    </a>
+                                    <<a href="#" class="item_title">УФ печать на фризби</a>
+                                    <span class="fresh_client">Ростелеком</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="fresh_item">
+                                <a href="#" class="fresh_item_img"><img src="<?php echo get_template_directory_uri(); ?>/img/fresh.jpg" alt="" /></a>
+                                <div class="fresh_item_text">
+                                    <a href="#" class="category_label tooltip">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/img/svg/categories/computer-screen_w.svg" alt="" />
+                                        <span class="tooltip-content">Tooltip</span>
+                                    </a>
+                                    <a href="#" class="item_title">УФ печать на ЧЕХЛЕ МОБИЛЬНОГО ТЕЛЕФОНА</a>
+                                    <span class="fresh_client">Частный клиент</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="fresh_item">
+                                <a href="#" class="fresh_item_img"><img src="<?php echo get_template_directory_uri(); ?>/img/fresh.jpg" alt="" /></a>
+                                <div class="fresh_item_text">
+                                    <a href="#" class="category_label tooltip">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/img/svg/categories/computer-screen_w.svg" alt="" />
+                                        <span class="tooltip-content">Tooltip</span>
+                                    </a>
+                                    <a href="#" class="item_title">УФ печать на фризби</a>
+                                    <span class="fresh_client">Ростелеком</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="fresh_item">
+                                <a href="#" class="fresh_item_img"><img src="<?php echo get_template_directory_uri(); ?>/img/fresh.jpg" alt="" /></a>
+                                <div class="fresh_item_text">
+                                    <a href="#" class="category_label tooltip">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/img/svg/categories/computer-screen_w.svg" alt="" />
+                                        <span class="tooltip-content">Tooltip</span>
+                                    </a>
+                                    <a href="#" class="item_title">УФ печать на ЧЕХЛЕ МОБИЛЬНОГО ТЕЛЕФОНА</a>
+                                    <span class="fresh_client">Частный клиент</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="fresh_item">
+                                <a href="#" class="fresh_item_img"><img src="<?php echo get_template_directory_uri(); ?>/img/fresh.jpg" alt="" /></a>
+                                <div class="fresh_item_text">
+                                    <a href="#" class="category_label tooltip">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/img/svg/categories/computer-screen_w.svg" alt="" />
+                                        <span class="tooltip-content">Tooltip</span>
+                                    </a>
+                                    <a href="#" class="item_title">УФ печать на фризби</a>
+                                    <span class="fresh_client">Ростелеком</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="fresh_item">
+                                <a href="#" class="fresh_item_img"><img src="<?php echo get_template_directory_uri(); ?>/img/fresh.jpg" alt="" /></a>
+                                <div class="fresh_item_text">
+                                    <a href="#" class="category_label tooltip">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/img/svg/categories/computer-screen_w.svg" alt="" />
                                         <span class="tooltip-content">Tooltip</span>
                                     </a>
                                     <a href="#" class="item_title">УФ печать на ЧЕХЛЕ МОБИЛЬНОГО ТЕЛЕФОНА</a>
@@ -393,16 +946,102 @@
             </div>
         </div>
         <!-- /clients -->
+
     <script>
-        $('.works_categories a').click(function(e) {     
+        $('.works_categories .r0').click(function(e) {    
+            console.log("we in r0");
             e.preventDefault();
-            $('a').removeClass('active_gr_btn');
+            $(this).removeClass('active_gr_btn');
             $(this).addClass('active_gr_btn');
             var tab = $(this).attr('href');
             // $('.tab').not(tab).css({'display':'none'});
             // $(tab).fadeIn(400);
-            $(".fresh_works_slider").hide(500);
-            $(".fresh_works_slider").show(1000);
+
+            $(".grey_btn").removeClass("active_gr_btn");
+            $(".grey_btn.r0").addClass("active_gr_btn");
+
+            $(".m1").hide(500);
+            $(".m2").hide(500);
+            $(".m3").hide(500);
+            $(".m4").hide(500);
+            $(".m0").show(500).css("display","block");
         });
+
+         $('.works_categories .r1').click(function(e) {    
+            console.log("we in r1");
+            e.preventDefault();
+            $(this).removeClass('active_gr_btn');
+            $(this).addClass('active_gr_btn');
+            var tab = $(this).attr('href');
+            // $('.tab').not(tab).css({'display':'none'});
+            // $(tab).fadeIn(400);
+
+            $(".grey_btn").removeClass("active_gr_btn");
+            $(".grey_btn.r1").addClass("active_gr_btn");
+
+            $(".m0").hide(500);
+            $(".m2").hide(500);
+            $(".m3").hide(500);
+            $(".m4").hide(500);
+            $(".m1").show(500).css("display","block");
+        });
+
+         $('.works_categories .r2').click(function(e) {    
+            console.log("we in r2");
+            e.preventDefault();
+            $(this).removeClass('active_gr_btn');
+            $(this).addClass('active_gr_btn');
+            var tab = $(this).attr('href');
+            // $('.tab').not(tab).css({'display':'none'});
+            // $(tab).fadeIn(400);
+
+            $(".grey_btn").removeClass("active_gr_btn");
+            $(".grey_btn.r2").addClass("active_gr_btn");
+
+            $(".m0").hide(500);
+            $(".m1").hide(500);
+            $(".m3").hide(500);
+            $(".m4").hide(500);
+            $(".m2").show(500).css("display","block");
+        });
+
+         $('.works_categories .r3').click(function(e) {    
+            console.log("we in r3");
+            e.preventDefault();
+            $(this).removeClass('active_gr_btn');
+            $(this).addClass('active_gr_btn');
+            var tab = $(this).attr('href');
+            // $('.tab').not(tab).css({'display':'none'});
+            // $(tab).fadeIn(400);
+
+            $(".grey_btn").removeClass("active_gr_btn");
+            $(".grey_btn.r3").addClass("active_gr_btn");
+
+            $(".m0").hide(500);
+            $(".m1").hide(500);
+            $(".m2").hide(500);
+            $(".m4").hide(500);
+            $(".m3").show(500).css("display","block");
+        });
+
+         $('.works_categories .r4').click(function(e) {    
+            console.log("we in r4");
+            e.preventDefault();
+            $(this).removeClass('active_gr_btn');
+            $(this).addClass('active_gr_btn');
+            var tab = $(this).attr('href');
+            // $('.tab').not(tab).css({'display':'none'});
+            // $(tab).fadeIn(400);
+
+            $(".grey_btn").removeClass("active_gr_btn");
+            $(".grey_btn.r4").addClass("active_gr_btn");
+
+            $(".m0").hide(500);
+            $(".m1").hide(500);
+            $(".m2").hide(500);
+            $(".m3").hide(500);
+            $(".m4").show(500).css("display","block");
+        });
+
     </script>
 <?php get_footer(); ?>
