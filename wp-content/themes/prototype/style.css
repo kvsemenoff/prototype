@@ -2587,6 +2587,33 @@ textarea.typical_inp_dark{
 .tech_menu a:before{
 	right:-1px;
 }
+
+
+
+
+.dg-cost a:before,.dg-cost a:after{
+	background:#0B7399;
+	position:absolute;
+	top:0;
+	bottom:0;
+	width:1px;
+	content:'';
+	opacity:1;
+}
+.dg-cost a:hover:before,.dg-cost a:hover:after,.dg-cost .tech_menu_active:before,.dg-cost .tech_menu_active:after{
+	opacity:1;
+}
+.dg-cost a:after{
+	left:-1px;
+}
+.dg-cost a:before{
+	right:-1px;
+}
+
+
+
+
+
 .article img{
     float: left;
     margin: 31px 32px 0 0;
@@ -4469,4 +4496,8 @@ html {
 .modal .team_name {
     font-size: 20px;
 }
+}
+
+.tech_menu_active a{
+	color: #fff;
 }

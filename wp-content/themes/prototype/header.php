@@ -11,6 +11,12 @@ error_reporting(E_ALL)
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title><?php bloginfo('name'); ?> <?php wp_title(); ?></title>
 	<?php wp_head(); ?>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/fancySelect.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/swiper.min.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.maskedinput-1.2.2.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.arcticmodal-0.3.min.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
 </head>
 
 			

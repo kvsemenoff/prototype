@@ -35,20 +35,25 @@ Template name: Страница производства (single)
                     <div class="sidebar">
                         <div class="side_title">Технологии</div>
                         <div class="tech_menu">
-                            <ul>
-                                <?php 
-                                  wp_reset_query(); 
-                                  $wp_query = new WP_Query(array(
-                                   'post_type' => '[manufacture]',
-                                   'posts_per_page' =>15,
-                                   'post_status' => 'publish',
-                                   'caller_get_posts'=> 1)
-                                   );
-                                  while ($wp_query->have_posts()) : $wp_query->the_post();
-                                ?>
-                                <li><a href="<?php echo the_permalink(); ?>"><?php the_title(); ?></a></li>
-                                <?php endwhile; ?>
-                            </ul>
+                            <? 
+                               $args = array(
+                                 'theme_location'  => '',
+                                 'menu'            => 'manufacture', 
+                                 'container_class' => '', 
+                                 'container_id'    => '',
+                                 'menu_class'      => 'menu', 
+                                 'menu_id'         => '',
+                                 'echo'            => true,
+                                 'fallback_cb'     => 'wp_page_menu',
+                                 'before'          => '',
+                                 'after'           => '',
+                                 'link_before'     => '',
+                                 'link_after'      => '',
+                                 'items_wrap'      => '<ul>%3$s</ul>',
+                                 'depth'           => 0
+                               );
+                               wp_nav_menu($args ); 
+                            ?>
                         </div>
                     </div>
                 </div>
