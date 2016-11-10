@@ -36,16 +36,18 @@ Template name: Страница производства (single)
                         <div class="side_title">Технологии</div>
                         <div class="tech_menu">
                             <ul>
-                                <li><a href="#">Цифровая УФ печать</a></li> 
-                                <li><a href="#">Высокая печать</a></li> 
-                                <li><a href="#">Сублимационная печать</a></li> 
-                                <li><a href="#" class="tech_menu_active">Трафаретная печать(шелкография)</a></li> 
-                                <li><a href="#">Тампонная печать</a></li> 
-                                <li><a href="#">Лазерная гравировка</a></li> 
-                                <li><a href="#">Машинная вышивка</a></li> 
-                                <li><a href="#">Цифровая печать</a></li> 
-                                <li><a href="#">Офсетная печать</a></li> 
-                                <li><a href="#">Тиснение</a></li> 
+                                <?php 
+                                  wp_reset_query(); 
+                                  $wp_query = new WP_Query(array(
+                                   'post_type' => '[manufacture]',
+                                   'posts_per_page' =>15,
+                                   'post_status' => 'publish',
+                                   'caller_get_posts'=> 1)
+                                   );
+                                  while ($wp_query->have_posts()) : $wp_query->the_post();
+                                ?>
+                                <li><a href="<?php echo the_permalink(); ?>"><?php the_title(); ?></a></li>
+                                <?php endwhile; ?>
                             </ul>
                         </div>
                     </div>
