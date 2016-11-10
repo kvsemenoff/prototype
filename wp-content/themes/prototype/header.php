@@ -80,8 +80,73 @@ error_reporting(E_ALL)
                     </div>
                     <div class="right_head">
                     	<a href="tel:84232090108" class="head_tel">+7 (423) 209-01-08</a>
-                        <a href="#" class="back_call">обратный звонок</a>
-                        <a href="#" class="blue_btn">оформить заявку</a>
+                        <a onclick="$('.call_mod').arcticmodal()" href="#" class="back_call">обратный звонок</a>
+                        <div style="display: none;">
+                            <div class="box-modal modal_width_2 call_mod">
+                                <div class="box-modal_close arcticmodal-close"></div>
+                                <div class="modal modal_call">
+                                    <div class="modal_title">Обратный звонок <p>Заполните пожалуйста анкету и мы вам перезвоним!</p></div>
+                                    <div class="form_bg">
+                                        <form>
+                                            <div class="form_line">
+                                                <span class="inp_title">Имя</span>                                          
+                                                <input type="text" class="typical_inp_dark typical_inp_light"/>
+                                            </div>
+                                            <div class="form_line">
+                                                 <span class="inp_title">Телефон</span>
+                                                 <input type="tel" class="typical_inp_dark typical_inp_light"/>
+                                            </div>
+                                            <input type="submit" class="blue_btn_2" value="ОТПРАВИТЬ" /> 
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a onclick="$('.order_mod').arcticmodal()" href="#" class="blue_btn">оформить заявку</a>
+                        <div style="display: none;">
+                            <div class="box-modal modal_width_1 order_mod">
+                                <div class="box-modal_close arcticmodal-close"></div>
+                                <div class="modal modal_form">
+                                    <div class="modal_title">Закажите услугу прямо сейчас, <span>или задайте любые вопросы</span></div>
+                                    <div class="form_bg">
+                                        <form>
+                                            <div class="form_line">
+                                                <span class="inp_title">Имя</span>                                          
+                                                <input type="text" class="typical_inp_dark typical_inp_light"/>
+                                            </div>
+                                            <div class="wrap_form_line clearfix">
+                                                <div class="form_line">
+                                                    <span class="inp_title">Эл.почта</span>
+                                                    <input type="email" class="typical_inp_dark typical_inp_light"/>
+                                                </div>
+                                                <div class="form_line">
+                                                    <span class="inp_title">Телефон</span>
+                                                    <input type="tel" class="typical_inp_dark typical_inp_light"/>
+                                                </div>
+                                            </div>
+                                            <div class="form_line">
+                                                <span class="inp_title">Интересующая услуга</span>
+                                                <div class="light_select">
+                                                    <select class="typical_select">
+                                                        <option value="">- выберите услугу из списка -</option>
+                                                        <option>Lorem Ipsum</option>
+                                                        <option>Lorem Ipsum</option>
+                                                        <option>Lorem Ipsum</option>
+                                                        <option>Lorem Ipsum</option>
+                                                        <option>Lorem Ipsum</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form_line">
+                                                <span class="inp_title">Сообщение</span>
+                                                <textarea  class="typical_inp_dark typical_inp_light"></textarea>
+                                            </div>
+                                            <input type="submit" class="blue_btn_2" value="ОТПРАВИТЬ" /> 
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
