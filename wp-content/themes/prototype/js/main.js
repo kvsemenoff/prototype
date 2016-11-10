@@ -188,3 +188,29 @@ $(function() {
       $('[type="tel"]').mask("+7(999) 999-99-99");
   });
 
+$(document).ready(function(){
+
+	$(".db-form1-submit").submit(function () {
+		alert(1);
+        var empty = true;
+        $('.db-form1-submit  input[name="tel"]').each(function(o){
+            if ($(this).val() == ""){empty = false;}
+        });
+        if (empty == false){
+          alert("Заполните, пожалуйста, Ваш телефон");
+        }else{
+          $.ajax({
+            type: 'POST',
+            url: '/sendmessage.php',
+            data: $('.db-form1-submit').serialize(),
+            success: function(data) {
+            }
+          });
+          $('.window').hide();
+          // $('a[href="#thanks"]').trigger('click');
+        }
+        var empty = true;
+        return false;
+    });
+
+});

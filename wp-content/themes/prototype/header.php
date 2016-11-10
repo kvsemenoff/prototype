@@ -87,14 +87,14 @@ error_reporting(E_ALL)
                                 <div class="modal modal_call">
                                     <div class="modal_title">Обратный звонок <p>Заполните пожалуйста анкету и мы вам перезвоним!</p></div>
                                     <div class="form_bg">
-                                        <form>
+                                        <form class="db-form1-submit">
                                             <div class="form_line">
                                                 <span class="inp_title">Имя</span>                                          
-                                                <input type="text" class="typical_inp_dark typical_inp_light"/>
+                                                <input type="text" name = "uname" class="typical_inp_dark typical_inp_light"/>
                                             </div>
                                             <div class="form_line">
                                                  <span class="inp_title">Телефон</span>
-                                                 <input type="tel" class="typical_inp_dark typical_inp_light"/>
+                                                 <input type="tel" name="tel" class="typical_inp_dark typical_inp_light"/>
                                             </div>
                                             <input type="submit" class="blue_btn_2" value="ОТПРАВИТЬ" /> 
                                         </form>
