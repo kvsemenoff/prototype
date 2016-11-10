@@ -225,16 +225,34 @@
             </div>
         </div>
         <!-- /technologies -->
-        
+
+<script>
+    $('.grey_btn').click(function(e) {
+    e.preventDefault();
+    $('.grey_btn').removeClass('active');
+    $(this).addClass('active');
+    var tab = $(this).attr('href');
+    $('.tab').not(tab).css({'display':'none'});
+    $(tab).fadeIn(400);
+});
+</script>
+
         <!-- fresh_works -->
         <div class="fresh_works">
         	<div class="title_block title_block_lined">СВЕЖИЕ РАБОТЫ</div> 
-            <div class="works_categories">                                                               
-            	<a href="#" class="grey_btn active_gr_btn">Все</a>
+            <div class="works_categories">
+                <ul>
+                    <li  class="grey_btn active_gr_btn">Все</li>
+                    <li class="grey_btn">ввв</li>
+                    <li class="grey_btn">ааа</li>
+                    <li class="grey_btn">пп</li>
+                    <li class="grey_btn">рр</li>
+                </ul>                                                               
+           <!--  	<a href="#" class="grey_btn active_gr_btn">Все</a>
                 <a href="#" class="grey_btn">УФ печать</a>
                 <a href="#" class="grey_btn">Печать на текстиле</a>
                 <a href="#" class="grey_btn">Цифровая печать</a>
-                <a href="#" class="grey_btn">Широформатная печать</a>
+                <a href="#" class="grey_btn">Широформатная печать</a> -->
             </div>
         	<div class="fresh_works_slider">
             	<div class="swiper-container works_slider">
