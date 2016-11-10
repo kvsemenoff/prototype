@@ -4470,3 +4470,7 @@ html {
     font-size: 20px;
 }
 }
+
+.tech_menu_active a{
+	color: #fff;
+}

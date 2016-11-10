@@ -675,6 +675,17 @@ function manufacture_register() {
     );
     register_post_type('manufacture', $args);
 }
+
+
+
+add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);
+
+function special_nav_class ($classes, $item) {
+    if (in_array('current-menu-item', $classes) ){
+        $classes[] = 'tech_menu_active ';
+    }
+    return $classes;
+}
 /**
  * Изменения:
  * 3.3 - новые хуки: attachment_tax_crumbs, post_tax_crumbs, term_tax_crumbs. Позволяют дополнить крошки таксономий.
