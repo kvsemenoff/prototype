@@ -476,7 +476,51 @@ function __crumbs_tax( $term_id, $tax, $sep, $linkpatt ){
 
     return implode('', $termlinks );
 }
-
+add_action('init', 'manufacture_register');
+function manufacture_register() {
+    $args = array(
+        'label'               => __('Производство'),
+        'labels'              => array(
+            'name'               => __('Производство'),
+            'singular_name'      => __('Производство'),
+            'menu_name'          => __('Производство'),
+            'all_items'          => __('Все записи производства'),
+            'add_new'            => _x('Добавить запись производства', 'manufacture'),
+            'add_new_item'       => __('Новая запись производства'),
+            'edit_item'          => __('Редактировать запись производства'),
+            'new_item'           => __('Новая запись производства'),
+            'view_item'          => __('Производство'),
+            'not_found'          => __('Запись производства не найдена'),
+            'not_found_in_trash' => __('Удаленных записей производства нет'),
+            'search_items'       => __('Найти запись производства')
+        ),
+        'description'         => __('Производство'),
+        'public'              => true,
+        'exclude_from_search' => false,
+        'publicly_queryable'  => true,
+        'show_ui'             => true,
+        'show_in_nav_menus'   => true,
+        'show_in_menu'        => true,
+        'show_in_admin_bar'   => true,
+        'menu_position'       => 5,
+        'capability_type'     => 'post',
+        'hierarchical'        => false,
+        'supports'            => array(
+            'title',
+            'editor',
+            'thumbnail',
+   'excerpt',
+   'custom-fields',
+   
+        ),
+        'has_archive'         => false,
+        'rewrite'             => array(
+            'slug'       => 'manufacture',
+            'with_front' => false
+        )
+    );
+    register_post_type('manufacture', $args);
+}
 /**
  * Изменения версий:
  * 
