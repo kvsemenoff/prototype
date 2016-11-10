@@ -59,10 +59,48 @@ Template name: О компании
                 <div class="wrap_team">
                 	<div class="swiper-container team_slider">
                     	<div class="swiper-wrapper">
-                        	<div class="swiper-slide">
+                            
+                            <?php
+
+                                $query = new WP_Query( array( 'post_type' => 'team', 'publish' => true) );
+                                if ($query->have_posts())
+                                while ( $query->have_posts() ) { 
+                                    $query->the_post(); 
+
+                            ?>
+                            
+                            <div class="swiper-slide">
+                                <div class="team_item">
+                                    <div class="team_i_top">
+                                        <!-- img -->
+                                        <?php the_content(); ?>
+                                        <div class="team_hidden">
+                                            <div class="team_btn">
+                                                <div class="team_link team_link_email"><span class="team_link_txt">email</span></div>
+                                                <div class="team_link team_link_tel"><span class="team_link_txt">telephone</span></div>
+                                            </div>
+                                            <div class="team_popup">
+                                                <div class="team_pop_display">
+                                                    <div class="team_pop_position">
+                                                        <div class="team_link team_link_email"><span class="team_link_txt"><?php echo get_field('uk-mail'); ?></span></div>
+                                                        <div class="team_link team_link_tel"><span class="team_link_txt"><?php echo get_field('uk-phone'); ?></span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="team_name"><?php echo get_field('uk-fio'); ?></div>
+                                    <div class="team_job"><?php echo get_field('uk-job'); ?></div>
+                                </div>
+                            </div>
+
+                            <?php } wp_reset_query(); ?>
+
+
+                            <!-- <div class="swiper-slide">
                             	<div class="team_item">
                                 	<div class="team_i_top">
-                                    	<img src="<?php echo get_template_directory_uri(); ?>/img/team.jpg" alt="" />
+                                    	<img src="<?php //echo get_template_directory_uri(); ?>/img/team.jpg" alt="" />
                                         <div class="team_hidden">
                                         	<div class="team_btn">
                                             	<div class="team_link team_link_email"><span class="team_link_txt">email</span></div>
@@ -85,30 +123,7 @@ Template name: О компании
                             <div class="swiper-slide">
                             	<div class="team_item">
                                 	<div class="team_i_top">
-                                    	<img src="<?php echo get_template_directory_uri(); ?>/img/team.jpg" alt="" />
-                                        <div class="team_hidden">
-                                        	<div class="team_btn">
-                                            	<div class="team_link team_link_email"><span class="team_link_txt">email</span></div>
-                                                <div class="team_link team_link_tel"><span class="team_link_txt">telephone</span></div>
-                                            </div>
-                                            <div class="team_popup">
-                                            	<div class="team_pop_display">
-                                                	<div class="team_pop_position">
-                                                        <div class="team_link team_link_email"><span class="team_link_txt">email</span></div>
-                                                        <div class="team_link team_link_tel"><span class="team_link_txt">telephone</span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="team_name">АЛЕНА КАРПЕНЧУК</div>
-                                    <div class="team_job">специалист по работе с клиентами</div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                            	<div class="team_item">
-                                	<div class="team_i_top">
-                                    	<img src="<?php echo get_template_directory_uri(); ?>/img/team.jpg" alt="" />
+                                    	<img src="<?php //echo get_template_directory_uri(); ?>/img/team.jpg" alt="" />
                                         <div class="team_hidden">
                                         	<div class="team_btn">
                                             	<div class="team_link team_link_email"><span class="team_link_txt">email</span></div>
@@ -129,7 +144,7 @@ Template name: О компании
                             <div class="swiper-slide">
                             	<div class="team_item">
                                 	<div class="team_i_top">
-                                    	<img src="<?php echo get_template_directory_uri(); ?>/img/team.jpg" alt="" />
+                                    	<img src="<?php //echo get_template_directory_uri(); ?>/img/team.jpg" alt="" />
                                         <div class="team_hidden">
                                         	<div class="team_btn">
                                                 <div class="team_link team_link_tel"><span class="team_link_txt">telephone</span></div>
@@ -147,7 +162,9 @@ Template name: О компании
                                     <div class="team_job">специалист по работе с клиентами</div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
+                        
+
                     </div>
                     <!-- Add Arrows -->
                     <div class="swiper-button-next team_slider_next"></div>
