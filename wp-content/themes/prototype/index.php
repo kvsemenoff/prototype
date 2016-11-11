@@ -820,7 +820,7 @@
         <!-- /fresh_works -->
         
         <!-- form_main -->
-        <div class="form_main navy_bg">
+        <div class="form_main navy_bg db-form_main">
         	<div>
             	<div class="wrap_form_main clearfix">
                 	<div class="form_main_txt">
@@ -836,12 +836,12 @@
                         </div>
                     </div>
                     <div class="calc_form">
-                    	<form>
+                    	<form class="db-subform_main">
                         	<div class="calc_form_bordered">
                                 <span class="inp_title">Имя</span>                                          
-                                <input type="text" class="typical_inp_dark typical_inp_dark_c1"/>
+                                <input type="text" name="uname" class="typical_inp_dark typical_inp_dark_c1"/>
                                 <span class="inp_title">Эл.почта</span>
-                                <input type="email" class="typical_inp_dark typical_inp_dark_c2"/>
+                                <input type="email" name="email" class="typical_inp_dark typical_inp_dark_c2"/>
                                 <span class="inp_title">Тип услуги</span>
                                 <div class="wrap_dark_select">
                                     <select class="typical_select">
@@ -872,7 +872,22 @@
                                     </div>
                                     <p>к примеру тех.задание или макет. Вес до 2 Мб.</p>
                                 </div>
-                                <input type="submit" class="blue_btn_2" value="ОТПРАВИТЬ" /> 
+                                <input type="submit" class="blue_btn_2" value="ОТПРАВИТЬ" />
+                                <div style="display: none;">
+                                    <div class="box-modal modal_width_1 success_mod">
+                                        <div class="box-modal_close arcticmodal-close"></div>
+                                        <div class="modal modal_success">
+                                            <div class="modal_title">Сообщение успешно отправлено</div>
+                                            <p>Ваше сообщение успешно отправлено. В ближайшее время наши менеджеры с вами свяжутся!</p>
+                                            <span class="modal_close_btn arcticmodal-close">закрыть сообщение</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+
                             </div>
                         </form>
                     </div>
@@ -907,7 +922,20 @@
                                 <a href="#">смотреть все вопросы <span class="quest_quantity">(14)</span></a>
                             </div>
                         </div>
-                        <a href="#" class="dark_blue_btn">Задать вопрос</a>
+                        <a onclick="$('.contacts_mod').arcticmodal()" href="#" class="dark_blue_btn">Задать вопрос</a>
+                        <div style="display: none;">
+                            <div class="box-modal modal_width_2 contacts_mod">
+                                <div class="box-modal_close arcticmodal-close"></div>
+                                <div class="modal modal_contacts">
+                                    <div class="modal_title">Контакты сотрудника</p></div>
+                                    <div class="team_name">АЛЕНА КАРПЕНЧУК</div>
+                                    <div class="team_job">специалист по работе с клиентами</div>
+                                    <div class="modal_team_link modal_email"><a href="mailto:karpenchyk@ptpprint.ru">karpenchyk@ptpprint.ru</a></div>
+                                    <div class="modal_team_link modal_tel"><a href="tel:84232509558">+7 (423) 250-95-58</a></div>
+                                    <span class="modal_close_btn arcticmodal-close">закрыть сообщение</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

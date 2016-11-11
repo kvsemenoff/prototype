@@ -254,4 +254,26 @@ $(document).ready(function(){
         var empty = true;
         return false;
     });
+	$(".db-form_main").submit(function () {
+        var empty = true;
+        $('.db-subform_main  input[name="email"]').each(function(o){
+            if ($(this).val() == ""){empty = false;}
+        });
+        if (empty == false){
+          alert("Заполните, пожалуйста, Ваш e-mail");
+        }else{
+          $.ajax({
+            type: 'POST',
+            url: '/sendmessage.php',
+            data: $('.db-subform_main').serialize(),
+            success: function(data) {
+            }
+          });
+	          $('.success_mod').arcticmodal();
+        }
+        var empty = true;
+        return false;
+    });
+
+
 });
