@@ -184,14 +184,15 @@ $(function() {
 });
 
 // ьфыл
- jQuery(function($){
-      $('[type="tel"]').mask("+7(999) 999-99-99");
-  });
+ // jQuery(function($){
+ //      $('[type="tel"]').mask("+7(999) 999-99-99");
+ //  });
 
 $(document).ready(function(){
 
-	$(".db-form1-submit").submit(function () {
-		alert(1);
+	$(".phone").mask("+ 7 (999) 999 - 99 - 99?");
+
+	$(".db-box-modal").submit(function () {
         var empty = true;
         $('.db-form1-submit  input[name="tel"]').each(function(o){
             if ($(this).val() == ""){empty = false;}
@@ -206,11 +207,51 @@ $(document).ready(function(){
             success: function(data) {
             }
           });
-          $('.window').hide();
-          // $('a[href="#thanks"]').trigger('click');
+			$('.arcticmodal-close').trigger('click');
         }
         var empty = true;
         return false;
     });
 
+    $(".db-box-modal1").submit(function () {
+        var empty = true;
+        $('.db-form2-submit  input[name="tel"]').each(function(o){
+            if ($(this).val() == ""){empty = false;}
+        });
+        if (empty == false){
+          alert("Заполните, пожалуйста, Ваш телефон");
+        }else{
+          $.ajax({
+            type: 'POST',
+            url: '/sendmessage.php',
+            data: $('.db-form2-submit').serialize(),
+            success: function(data) {
+            }
+          });
+			$('.arcticmodal-close').trigger('click');
+        }
+        var empty = true;
+        return false;
+    });
+
+	$(".db-box-modal2").submit(function () {
+        var empty = true;
+        $('.db-form3-submit  input[name="tel"]').each(function(o){
+            if ($(this).val() == ""){empty = false;}
+        });
+        if (empty == false){
+          alert("Заполните, пожалуйста, Ваш телефон");
+        }else{
+          $.ajax({
+            type: 'POST',
+            url: '/sendmessage.php',
+            data: $('.db-form3-submit').serialize(),
+            success: function(data) {
+            }
+          });
+			$('.arcticmodal-close').trigger('click');
+        }
+        var empty = true;
+        return false;
+    });
 });

@@ -16,7 +16,7 @@ error_reporting(E_ALL)
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/swiper.min.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.maskedinput-1.2.2.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.arcticmodal-0.3.min.js"></script>
-<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
+<!-- <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script> -->
 </head>
 
 			
@@ -52,7 +52,28 @@ error_reporting(E_ALL)
             <a href="#" class="soc_ic" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/svg/social/instagram-logo.svg" alt="" /></a>
         </div>
         <a href="tel:84232090108" class="head_tel">+7 (423) 209-01-08</a>
-        <a href="#" class="back_call">обратный звонок</a>
+        <a onclick="$('.call_mod').arcticmodal()" href="#" class="back_call">обратный звонок</a>
+        <div style="display: none;">
+            <div class="box-modal modal_width_2 call_mod db-box-modal2">
+                <div class="box-modal_close arcticmodal-close"></div>
+                <div class="modal modal_call">
+                    <div class="modal_title">Обратный звонок <p>Заполните пожалуйста анкету и мы вам перезвоним!</p></div>
+                    <div class="form_bg">
+                        <form class="db-form3-submit">
+                            <div class="form_line">
+                                <span class="inp_title">Имя</span>
+                                <input type="text" name = "uname" class="typical_inp_dark typical_inp_light"/>
+                            </div>
+                            <div class="form_line">
+                                 <span class="inp_title">Телефон</span>
+                                 <input type="tel" name="tel" class="typical_inp_dark typical_inp_light phone"/>
+                            </div>
+                            <input type="submit" class="blue_btn_2" value="ОТПРАВИТЬ" /> 
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- /sidebar_mobile -->
     
@@ -88,19 +109,19 @@ error_reporting(E_ALL)
                     	<a href="tel:84232090108" class="head_tel">+7 (423) 209-01-08</a>
                         <a onclick="$('.call_mod').arcticmodal()" href="#" class="back_call">обратный звонок</a>
                         <div style="display: none;">
-                            <div class="box-modal modal_width_2 call_mod">
+                            <div class="box-modal modal_width_2 call_mod db-box-modal1">
                                 <div class="box-modal_close arcticmodal-close"></div>
                                 <div class="modal modal_call">
                                     <div class="modal_title">Обратный звонок <p>Заполните пожалуйста анкету и мы вам перезвоним!</p></div>
                                     <div class="form_bg">
-                                        <form class="db-form1-submit">
+                                        <form class="db-form2-submit">
                                             <div class="form_line">
-                                                <span class="inp_title">Имя</span>                                          
+                                                <span class="inp_title">Имя</span>
                                                 <input type="text" name = "uname" class="typical_inp_dark typical_inp_light"/>
                                             </div>
                                             <div class="form_line">
                                                  <span class="inp_title">Телефон</span>
-                                                 <input type="tel" name="tel" class="typical_inp_dark typical_inp_light"/>
+                                                 <input type="tel" name="tel" class="typical_inp_dark typical_inp_light phone"/>
                                             </div>
                                             <input type="submit" class="blue_btn_2" value="ОТПРАВИТЬ" /> 
                                         </form>
@@ -110,14 +131,15 @@ error_reporting(E_ALL)
                         </div>
                         <a onclick="$('.order_mod').arcticmodal()" href="#" class="blue_btn">оформить заявку</a>
                         <div style="display: none;">
-                            <div class="box-modal modal_width_1 order_mod">
+                            <div class="box-modal modal_width_1 order_mod db-box-modal">
                                 <div class="box-modal_close arcticmodal-close"></div>
                                 <div class="modal modal_form">
-                                    <div class="modal_title">Закажите услугу прямо сейчас, <span>или задайте любые вопросы</span></div>
+                                    <div class="modal_title">Закажите услугу прямо сейчас, <span>или задайте любые вопросы</span>
+                                    </div>
                                     <div class="form_bg">
-                                        <form>
+                                        <form class="db-form1-submit">
                                             <div class="form_line">
-                                                <span class="inp_title">Имя</span>                                          
+                                                <span class="inp_title">Имя</span>
                                                 <input type="text" class="typical_inp_dark typical_inp_light"/>
                                             </div>
                                             <div class="wrap_form_line clearfix">
@@ -127,7 +149,7 @@ error_reporting(E_ALL)
                                                 </div>
                                                 <div class="form_line">
                                                     <span class="inp_title">Телефон</span>
-                                                    <input type="tel" class="typical_inp_dark typical_inp_light"/>
+                                                    <input type="tel" name="tel" class="typical_inp_dark typical_inp_light phone"/>
                                                 </div>
                                             </div>
                                             <div class="form_line">
