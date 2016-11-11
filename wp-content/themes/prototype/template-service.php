@@ -1,6 +1,6 @@
 <?php 
 /*
-Template name: Услуги 
+Template name: Услуги 1
 */
 ?>
 <?php get_header(); ?>     

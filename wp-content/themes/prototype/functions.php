@@ -206,8 +206,8 @@ function faq_register() {
     register_post_type('faq', $args);
 }
 
-add_action('init', 'slider_register');
-function slider_register() {
+add_action('init', 'service_create');
+function service_create() {
     $args = array(
         'label'               => __('Услуги'),
         'labels'              => array(
@@ -236,8 +236,11 @@ function slider_register() {
         'capability_type'     => 'post',
         'hierarchical'        => false,
         'supports'            => array(
-            'title'
-            
+            'title',
+            'editor',
+            'thumbnail',
+   'excerpt',
+   'custom-fields',
    
         ),
         'has_archive'         => false,
@@ -248,8 +251,6 @@ function slider_register() {
     );
     register_post_type('service', $args);
 }
-
-
 
 
 /**
