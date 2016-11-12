@@ -206,51 +206,103 @@ function faq_register() {
     register_post_type('faq', $args);
 }
 
-add_action('init', 'service_create');
-function service_create() {
-    $args = array(
-        'label'               => __('Услуги'),
-        'labels'              => array(
-            'name'               => __('Услуги'),
-            'singular_name'      => __('Услуги'),
-            'menu_name'          => __('Услуги'),
-            'all_items'          => __('Все услуги'),
-            'add_new'            => _x('Добавить услугу', 'product'),
-            'add_new_item'       => __('Новая услуга'),
-            'edit_item'          => __('Редактировать услугу'),
-            'new_item'           => __('Новая услуга'),
-            'view_item'          => __('Услуги'),
-            'not_found'          => __('Услуга не найдена'),
-            'not_found_in_trash' => __('Удаленных услуг нет'),
-            'search_items'       => __('Найти услугу')
-        ),
-        'description'         => __('Услуги'),
-        'public'              => true,
-        'exclude_from_search' => false,
-        'publicly_queryable'  => true,
-        'show_ui'             => true,
-        'show_in_nav_menus'   => true,
-        'show_in_menu'        => true,
-        'show_in_admin_bar'   => true,
-        'menu_position'       => 5,
-        'capability_type'     => 'post',
-        'hierarchical'        => false,
-        'supports'            => array(
-            'title',
-            'editor',
-            'thumbnail',
-   'excerpt',
-   'custom-fields',
+// add_action('init', 'service_create');
+// function service_create() {
+//     $args = array(
+//         'label'               => __('Услуги'),
+//         'labels'              => array(
+//             'name'               => __('Услуги'),
+//             'singular_name'      => __('Услуги'),
+//             'menu_name'          => __('Услуги'),
+//             'all_items'          => __('Все услуги'),
+//             'add_new'            => _x('Добавить услугу', 'product'),
+//             'add_new_item'       => __('Новая услуга'),
+//             'edit_item'          => __('Редактировать услугу'),
+//             'new_item'           => __('Новая услуга'),
+//             'view_item'          => __('Услуги'),
+//             'not_found'          => __('Услуга не найдена'),
+//             'not_found_in_trash' => __('Удаленных услуг нет'),
+//             'search_items'       => __('Найти услугу')
+//         ),
+//         'description'         => __('Услуги'),
+//         'public'              => true,
+//         'exclude_from_search' => false,
+//         'publicly_queryable'  => true,
+//         'show_ui'             => true,
+//         'show_in_nav_menus'   => true,
+//         'show_in_menu'        => true,
+//         'show_in_admin_bar'   => true,
+//         'menu_position'       => 5,
+//         'capability_type'     => 'post',
+//         'hierarchical'        => false,
+//         'supports'            => array(
+//             'title',
+//             'editor',
+//             'thumbnail',
+//    'excerpt',
+//    'custom-fields',
    
-        ),
-        'has_archive'         => false,
-        'rewrite'             => array(
-            'slug'       => '',
-            'with_front' => false
+//         ),
+//         'has_archive'         => false,
+//         'rewrite'             => array(
+//             'slug'       => '',
+//             'with_front' => false
+//         )
+//     );
+//     register_post_type('service1', $args);
+// }
+
+
+//
+add_action( 'init', 'register_post_types' ); 
+function register_post_types() {
+    // post_type_1
+    register_post_type( 'de_services', array(
+        'labels' => array(
+            'name' => __( 'Услуги' ),
+            'singular_name' => __( 'Услуга' )
+            ),
+        'public' => true,
+        'has_archive' => true,
+        'rewrite' => array('slug' => 'de-services'),
         )
     );
-    register_post_type('service', $args);
 }
+
+add_action('init', 'mycat_taxonomy_register', 0);
+function mycat_taxonomy_register() {
+    $args = array(
+        'labels'            => array(
+            'name'                       => _x('Категория', 'mycat'),
+            'singular_name'              => _x('Категория', 'mycat'),
+            'menu_name'                  => __('Категории'),
+            'all_items'                  => __('Категории'),
+            'new_item_name'              => __('Новая категория'),
+            'add_new_item'               => __('Добавить категорию'),
+            'edit_item'                  => __('Редактировать категорию'),
+            'update_item'                => __('Обновить категорию'),
+            'search_items'               => __('Искать категорию'),
+            'add_or_remove_items'        => __('Добавить или удалить категорию'),
+            'choose_from_most_used'      => __('Выбрать из часто используемых категорий'),
+        ),
+        'hierarchical'      => true,
+        'public'            => true,
+        'show_ui'           => true,
+        'show_admin_column' => true,
+        'show_in_nav_menus' => true,
+        'show_tagcloud'     => true,
+        'query_var'         => 'mycat',
+        'rewrite'           => array(
+            'slug'         => 'mycat',
+            'with_front'   => true,
+            'hierarchical' => true,
+        ),
+    );
+
+    register_taxonomy('mycat', 'de_services', $args);
+}
+
+
 
 
 /**
