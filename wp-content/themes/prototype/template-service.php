@@ -1,21 +1,85 @@
 <?php 
 /*
-Template name: Услуги 1
+Template name: Услуги
 */
 ?>
 <?php get_header(); ?>     
+
+<?php
+function d($val, $caption="", $die=0){
+    echo "<br><span style='color: red; '>DEBUG {$caption} </span><pre>"; 
+    print_r($val); 
+    echo "</pre>"; 
+
+    if ($die) { die(); }
+}
+?>
 
 <!-- container -->
 <div class="container">
     <div>
         <div class="breadcrumbs">
             <a href="#">Главная</a>\
-            <span>Услуги</span>  
+            <span>Услуги</span>
         </div>
         <div class="about">
             <h1>Услуги типографии</h1>
             <p>На этой странице перечислен полный ассортимент продукции, печать или изготовление которой можно заказать в типографии «ПРОТОТИП».</p>
         </div>
+        <!-- start of Nav_services -->
+        <?php 
+            global $wpdb; 
+            $query = "SELECT COUNT(*) FROM posts";
+            //$wpdb->query($query);
+            $rs = $wpdb->get_results($query);
+            d($rs, "query 1", 1); 
+
+            $query = new WP_Query( array( 'post_type' => 'de_services', 'publish' => true) ); 
+            $query = $query['posts']; 
+            d($query,"de_services",1); 
+
+            $hiterms = get_terms("mycat", array("orderby" => "slug", "parent" => 0));
+            //d($hiterms,"parent"); 
+            foreach($hiterms as $key => $hiterm){
+                d($hiterm,"hiterm_inner"); 
+                //$image = get_image('картинка_для_категории_услуги', $hiterm); 
+                //$arr = get_field('картинка_для_категории_услуги');  print_r($arr); 
+                $queried_object = get_queried_object(); 
+                d($queried_object,"inner object. id = "); 
+                $taxonomy = $queried_object->taxonomy; 
+                $term_id = $queried_object->term_id; 
+                $image = get_field('mycatimg', $taxonomy . '_' . $term_id); 
+                d($image,"img"); 
+                // $image = get_field('name'); 
+                echo 'img = <img src="'.$image['sizes']['thumbnail'].'" /> :_ end<br/>'; 
+                echo $hiterm->name; 
+                echo $hiterm->slug;                 
+
+                // 
+                // $query = new WP_Query( array( 'post_type' => 'de_services', 'publish' => true) ); 
+                // d($query,"de_services",1); 
+                //  if ($query->have_posts())
+                //     while ( $query->have_posts() ) { 
+                //       $query->the_post(); 
+
+
+                //       echo get_the_content(); 
+                //       echo get_field('uk-fio');
+                //   }
+                wp_reset_query();
+
+                $loterms = get_terms("mycat", array("orderby" => "slug", "parent" => $hiterm->term_id)); 
+                if($loterms){
+                    foreach($loterms as $key => $loterm){
+                    }
+                }
+            }
+            ?>
+
+        <!-- end of Nav_services -->
+        <hr>
+        <hr>
+        <hr>
 
         <div class="service_page">
             <div class="service_page_link">

@@ -23,13 +23,14 @@
 define('DB_NAME', 'kvsemeno83');
 
 /** Имя пользователя MySQL */
-define('DB_USER', 'kvsemeno83');
+define('DB_USER', 'root');
 
-/** Пароль к базе данных MySQL */
-define('DB_PASSWORD', 'a123456a');
+/** Пароль к базе данных MySQL */ 
+define('DB_PASSWORD', ''); 
 
 /** Имя сервера MySQL */
-define('DB_HOST', 'VH247.spaceweb.ru');
+// define('DB_HOST', 'VH247.spaceweb.ru'); 
+define('DB_HOST', '192.168.1.192:3308'); 
 
 /** Кодировка базы данных для создания таблиц. */
 define('DB_CHARSET', 'utf8');
