@@ -18,25 +18,28 @@
  * @package WordPress
  */
 
-// ** Параметры MySQL: Эту информацию можно получить у вашего хостинг-провайдера ** //
-/** Имя базы данных для WordPress */
+
+
 define('DB_NAME', 'kvsemeno83');
-
-/** Имя пользователя MySQL */
-define('DB_USER', 'root');
-
-/** Пароль к базе данных MySQL */ 
-define('DB_PASSWORD', ''); 
-
-/** Имя сервера MySQL */
-// define('DB_HOST', 'VH247.spaceweb.ru'); 
-define('DB_HOST', '192.168.1.192:3308'); 
-
-/** Кодировка базы данных для создания таблиц. */
+define('DB_USER', 'kvsemeno83');
+define('DB_PASSWORD', 'a123456a');
+define('DB_HOST', 'VH247.spaceweb.ru');
 define('DB_CHARSET', 'utf8');
-
-/** Схема сопоставления. Не меняйте, если не уверены. */
 define('DB_COLLATE', '');
+
+
+// // 
+// define('DB_NAME', 'kvsemeno83'); 
+// define('DB_USER', 'root'); 
+// define('DB_PASSWORD', ''); 
+// define('DB_HOST', 'localhost:3308'); 
+// //define('DB_HOST', '192.168.1.192:3308'); 
+
+// define('DB_CHARSET', 'utf8'); 
+// define('DB_COLLATE', ''); 
+// define('DB_CHARSET', 'utf8'); 
+// define('DB_COLLATE', ''); 
+
 
 /**#@+
  * Уникальные ключи и соли для аутентификации.
