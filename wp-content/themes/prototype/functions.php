@@ -257,14 +257,14 @@ function faq_register() {
 add_action( 'init', 'register_post_types' ); 
 function register_post_types() {
     // post_type_1
-    register_post_type( 'de_services', array(
+    register_post_type( 'services', array(
         'labels' => array(
             'name' => __( 'Услуги' ),
             'singular_name' => __( 'Услуга' )
             ),
         'public' => true,
         'has_archive' => true,
-        'rewrite' => array('slug' => 'de-services'),
+        'rewrite' => array('slug' => 'services'),
         )
     );
 }
@@ -299,7 +299,7 @@ function mycat_taxonomy_register() {
         ),
     );
 
-    register_taxonomy('mycat', 'de_services', $args);
+    register_taxonomy('mycat', 'services', $args);
 }
 
 

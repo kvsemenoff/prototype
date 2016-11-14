@@ -25,12 +25,12 @@ Template name: Услуги
                         <img src="<?php echo $image['sizes']['thumbnail'] ?>" alt="">
                     </a>
                     <div class="ser_txt">
-                        <a href="<?php  echo $hiterm->slug;  ?>" class="ser_title"><?php echo $hiterm->name; ?></a>
+                        <a href="<?php  echo '/?mycat='.$hiterm->slug;  ?>" class="ser_title"><?php echo $hiterm->name; ?></a>
                         <div class="ser_menu">
                             <?php 
                              wp_reset_query();
                              $args = array(
-                                'post_type' => 'de_services',
+                                'post_type' => 'services',
                                 'mycat'    => $hiterm->name
                             );
                             $query = new WP_Query( $args );

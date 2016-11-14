@@ -1,5 +1,5 @@
 <?php get_header(); ?>  
-
+eeeeeeeeeeeeeeeeeee
 <?php
 $term = get_queried_object();
 $children = get_terms( $term->taxonomy, array(

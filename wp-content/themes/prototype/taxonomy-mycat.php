@@ -1,5 +1,5 @@
 <?php get_header(); ?>  
-tttttttttttttttttttttt
+
 <?php
 $term = get_queried_object();
 $children = get_terms( $term->taxonomy, array(
@@ -8,11 +8,13 @@ $children = get_terms( $term->taxonomy, array(
 ) );
 
 if( $children ){
-   echo "ddd";
+   // echo "ddd";
 
 } else { 
-        // здесь код следующего уровня
-    lavel2();
+    // здесь код следующего уровня
+    // 
+    echo "level 2"; 
+    lavel2(); 
    
 }
 ?>
@@ -43,7 +45,7 @@ function lavel2(){
                 $term = get_queried_object();
                  wp_reset_query();
                  $args = array(
-                    'post_type' => 'de_services',
+                    'post_type' => 'services',
                     'mycat'    => $term->name
                 );
                 $query = new WP_Query( $args );
@@ -52,11 +54,19 @@ function lavel2(){
                     while ( $query->have_posts() ) {
                         $query->the_post();
                         ?>
-                        <div class="ser_i_link">            
-                            <a href="<?php the_permalink(); ?>" class="ser_l_img"><img src="<?php echo get_template_directory_uri(); ?>/img/services/ser1.jpg" alt="" /></a>
+                        <div class="ser_i_link">
+                            <a href="<?php the_permalink(); ?>" class="ser_l_img">
+                                <?php 
+                                    //$hiterms = get_terms("mycat", array("orderby" => "slug", "parent" => 0));
+                                    //foreach($hiterms as $key => $hiterm){
+                                    $image = get_field('img1'); 
+                                    $image = $image['sizes']['thumbnail']; 
+                                    // src = $image['sizes']['thumbnail'] 
+                                    ?><img src="<?php echo $image; ?>" alt="" />
+                            </a>
                             <div class="ser_i_txt">
                                 <a href="<?php the_permalink(); ?>" class="ser_i_title"><?php the_title(); ?></a>
-                                <ul>    
+                                <ul>
                                     <li>Обычные визитки на качественной плотной бумаге</li>
                                     <li>Самый недорогой вариант из всех возможных</li>
                                     <li>Оптимально подходят для массового распространения</li>
@@ -64,7 +74,7 @@ function lavel2(){
                             </div>
                             <a href="<?php the_permalink(); ?>" class="bordered_btn">ПОДРОБНЕЕ</a>
                         </div>
-                <?php        
+                <?php 
                     }
                 } else {
                     // Постов не найдено
