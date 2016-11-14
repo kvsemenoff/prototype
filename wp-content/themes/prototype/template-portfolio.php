@@ -3,7 +3,27 @@
  Template name: Портфолио
  */
  ?>
- <?php get_header(); ?>        
+ <?php get_header(); ?>
+
+<!-- ************************************************************* -->
+<?php 
+
+    $args = array('orderby' => 'id', 'hide_empty' => 0);
+    $categories = get_categories( $args );
+
+    print_r($categories);
+    
+    $my_array = array();
+    for ($j=0; $j<count($categories); $j++){
+        $my_id = $categories[$j]->term_id;
+        $categories2 =  get_categories(Array('parent' => $my_id));
+        $my_array[$my_id] = $categories2;
+    }
+        print_r($my_array); //выводит массив, который надо перебрать
+
+ ?>
+<!-- ************************************************************* -->
+
 <div class="container">
 	<div>
     	<div class="breadcrumbs">
