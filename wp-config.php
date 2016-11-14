@@ -30,8 +30,8 @@
 define('DB_NAME', 'kvsemeno83'); 
 define('DB_USER', 'root'); 
 define('DB_PASSWORD', ''); 
-define('DB_HOST', 'localhost'); 
-//define('DB_HOST', 'localhost:3308'); 
+//define('DB_HOST', 'localhost'); 
+define('DB_HOST', 'localhost:3308'); 
 //define('DB_HOST', '192.168.1.192:3308'); 
 
 define('DB_CHARSET', 'utf8'); 
